@@ -5,6 +5,9 @@
   "main": "index.js",
   "author": "Kevin",
   "license": "MIT",
+  "scripts": {
+    "start": "gulp"
+  },
   "dependencies": {
     "bootstrap": "4.0.0-beta",
     "font-awesome": "4.7.0",

@@ -15,21 +15,21 @@ gulp.task('sass', () => {
 // Move JS File to src/js
 gulp.task('js', () => {
 	return gulp.src([
-		'node_modules/bootstrap/dist/bootstrap.min.js',
+		'node_modules/bootstrap/dist/js/bootstrap.min.js',
 		'node_modules/jquery/dist/jquery.min.js',
 		'node_modules/popper.js/dist/umd/popper.min.js'
 	]).pipe(gulp.dest("src/js"));
 });
 
 // Watch Sass & Server
-gulp.task('serve', ['sass'], () => {
+gulp.task('server', ['sass'], () => {
 	browserSync.init({
 		server: "./src"
 	});
 
 	gulp.watch([
 		'node_modules/bootstrap/scss/bootstrap.scss',
-		'src/sass/*.scss'
+		'src/sass/*.sass'
 	], ['sass']);
 	gulp.watch('src/*.html').on('change', browserSync.reload);
 });
