@@ -1,0 +1,8 @@
+{
+  "name": "bs4_Starter",
+  "version": "1.0.0",
+  "description": "A workflow for bootstrap_4 projcet",
+  "main": "index.js",
+  "author": "Kevin",
+  "license": "MIT"
+}
